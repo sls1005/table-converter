@@ -104,7 +104,7 @@ $ python table_converter.py scores.csv --to wiki
 
 * Web development.
 
-* In early stages of data processing, converting a CSV file to a form that other programs can read.
+* In early stages of data processing, converting a form of CSV files to a form that other programs can read.
 
 ### Supported input format
 
@@ -120,7 +120,7 @@ Currently, only CSV is supported. This program follows [RFC 4180](https://datatr
 
 * `wiki`: wikitext as supported by MediaWiki. Special characters are not escaped.
 
-* `csv`: CSV as defined in RFC 4180. This is currently the same as the only supported input format, so it is only used for converting between encodings, adding byte-order marks, etc. (CSV are plain text files, and should be treated as plain text files. In many cases, when dealing with CSV files, these plain-text-file-specific details deserve your care even more than when dealing with normal plain text files.)
+* `csv`: CSV as defined in [RFC 4180](https://datatracker.ietf.org/doc/html/rfc4180). This is currently the same as the only supported input format, so it is only used for converting between encodings, adding byte-order marks, etc. (CSV are plain text files, and should be treated as plain text files. In many cases, when dealing with CSV files, these plain-text-file-specific details deserve your care even more than when dealing with normal plain text files.)
 
 ### How it works
 The concept behind it is very simple. The output of this program, be it a Markdown table or HTML table, doesn't contain more information than a CSV file, just uses more characters to represent the information. I mean, a HTML table can indeed contain more information than a CSV file (such as the style), but this program's output doesn't contain.
