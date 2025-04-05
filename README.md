@@ -116,7 +116,7 @@ Currently, only CSV is supported. This program follows [RFC 4180](https://datatr
 
 * `markdown` or `md`: Markdown, GFM syntax. As of Apr. 2025, the table syntax is also considered compatible with the GLFM syntax. Special characters are not escaped.
 
-* `markdown-adjusted` or `md-adj`: same as `markdown`, but formatted for better plain text readability on wide screens.
+* `markdown-adjusted` or `md-adj`: same as `markdown`, but formatted for better plain text readability on wide screens. This assumes a monospaced font.
 
 * `wiki`: wikitext as supported by MediaWiki. Special characters are not escaped.
 

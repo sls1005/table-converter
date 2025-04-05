@@ -29,7 +29,7 @@ Options:
 
     -e, --encoding <encoding>                 Specifying the default encoding for encoding the output file and decoding the input file when their encodings are not specified.
 
-    -f2, --to <format>                        The expected format of the OUTPUT file. Possible values: html (HTML), csv (CSV as defined in RFC 4180), wiki (wikitext as supported by MediaWiki), markdown (Markdown, GFM syntax), markdown-adjusted (similar to 'markdown'; the generated table will be formatted for plain text readability. This assumes infinite screen width with a monospaced font), md (alias for 'markdown'), md-adj (alias for markdown-adjusted), md-gfm (currently an alias for 'markdown'), md-glfm (currently an alias for 'markdown'). Default: markdown. Other formats are not supported.
+    -f2, --to <format>                        The expected format of the OUTPUT file. Possible values: html (HTML), csv (CSV as defined in RFC 4180), wiki (wikitext as supported by MediaWiki), markdown (Markdown, GFM syntax), markdown-adjusted (similar to 'markdown'; the generated table will be formatted for plain text readability on wide screens; assumes monospaced font), md (alias for 'markdown'), md-adj (alias for 'markdown-adjusted'), md-gfm (currently an alias for 'md'), md-glfm (currently an alias for 'md'). Default: markdown. Other output formats are not supported.
 
     -s1, --input-separator <separator>        The character that separates two values in a CSV input file. Defaults to a comma (','). This is ignored if the input file is not a CSV file.
 
