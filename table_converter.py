@@ -55,7 +55,7 @@ If no argument is provided, this program reads CSV from stdin and writes a Markd
 
 Example: python3 table_converter.py -i input-file.csv -s1 ',' -e1 UTF-16 -o output-file.md -f2 md -e2 UTF-8
 
-Note: The 'markdown-adjusted' mode is optimized for wide screens, not for small screens. It is recommeded that you use `-f2 wiki` (which uses a lot of linebreaks) for the purpose of information-visualizing if you are on a terminal with a small or not large enough screen.
+Note: The 'markdown-adjusted' mode is optimized for wide screens, not for small screens. It is recommeded that you use `-f2 wiki` (which uses a lot of linebreaks) for the purpose of information-visualizing if you are on a terminal with a small screen.
 '''
 
 csv.register_dialect("rfc4180", delimiter=',', lineterminator='\r\n', quoting=csv.QUOTE_MINIMAL, quotechar='"', doublequote=True, skipinitialspace=False, strict=False)
