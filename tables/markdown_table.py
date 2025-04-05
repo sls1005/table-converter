@@ -16,8 +16,8 @@ def md_table_data_row(data): # list[str|int|float] -> str
     return result
 
 def matrix_to_md_table(headers_and_data): # list[list[str|int|float]] -> str
-    if len(headers_and_data) < 1:
-        raise ValueError
+    if len(headers_and_data) == 0:
+        return ''
     headers = headers_and_data[0]
     result = md_table_header_row(headers)
     if len(headers_and_data) > 1:
@@ -26,8 +26,8 @@ def matrix_to_md_table(headers_and_data): # list[list[str|int|float]] -> str
     return result
 
 def matrix_to_md_table_adjusted(headers_and_data): # list[list[str|int|float]] -> str
-    if len(headers_and_data) < 1:
-        raise ValueError
+    if len(headers_and_data) == 0:
+        return ''
     ncol = 0
     col_widths = []
     result = '|'
