@@ -209,6 +209,9 @@ def main():
             output_encoding = 'utf-8-sig'
     if sys.version_info.major < 3:
         exit("[Error] This version of interpreter ('%d') is not supported. Please use a newer interpreter to run this." % sys.version_info.major)
+    if output_file_name is not None:
+        if os.path.exists(output_file_name):
+            exit("[Error] '%s' already exists." % output_file_name)
     matrix = []
     if input_file_name is None:
         for row in csv.reader(stdin.readlines(), dialect="rfc4180", delimiter=input_separator):
